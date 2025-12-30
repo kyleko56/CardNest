@@ -7,6 +7,28 @@
 ## Summary
 Cross‑platform Flutter app for managing trading card collections with batch OCR, secure offline storage, and a Fastify/Node backend. The system emphasizes privacy and security (SQLCipher at rest, App Check + JWT in transit, SPKI/TLS pinning), with pricing aggregation, quota/rate controls, and encrypted backups.
 
+## Visual Proof of Concept
+
+<table>
+  <tr>
+    <td width="33%" align="center">
+      <b>True Offline Accessibility</b><br>
+      <img src="assets/offline_search.gif" width="100%"/><br>
+      <sub><i>Airplane Mode enabled: Full local inventory search & access via SQLCipher.</i></sub>
+    </td>
+    <td width="33%" align="center">
+      <b>Async OCR Pipeline</b><br>
+      <img src="assets/async_ocr.gif" width="100%"/><br>
+      <sub><i>Non-blocking batch processing with strict confidence gating.</i></sub>
+    </td>
+    <td width="33%" align="center">
+      <b>Complex Entity Management</b><br>
+      <img src="assets/entity_manage.gif" width="100%"/><br>
+      <sub><i>Handling multi-variant schemas & real-time pricing states.</i></sub>
+    </td>
+  </tr>
+</table>
+
 ## Architecture (At a Glance)
 
 ```mermaid
@@ -162,13 +184,6 @@ flowchart TD
 - Flutter/Dart, Firebase Auth/App Check, SQLCipher (sqflite_sqlcipher)
 - Fastify/Node.js, Postgres, RevenueCat
 - Cloudflare Tunnel, Railway, Backblaze B2 (encrypted backups)
-
-## Screenshots (to be inserted before export)
-Include 3–5 images with short captions (blur any sensitive data):
-- OCR capture → result match
-- Condition/grade drawer and market summary
-- Collections list with filters/analytics
-- Pricing/entitlement UI (if relevant)
 
 ## Future Work / Status
 - App completeness ≈ 90%
