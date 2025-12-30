@@ -3,6 +3,8 @@
 - Role: Sole developer (with AI coding agent)
 - Timeline: 2025-07 → 2025-10
 - Status: Private repo, unpublished app (internal TestFlight used)
+> Note: This repository is an architecture-focused case study.
+> Application source code is kept private; this repo documents system design, trade-offs, and results.
 
 ## Summary
 Cross‑platform Flutter app for managing trading card collections with batch OCR, secure offline storage, and a Fastify/Node backend. The system emphasizes privacy and security (SQLCipher at rest, App Check + JWT in transit, SPKI/TLS pinning), with pricing aggregation, quota/rate controls, and encrypted backups.
