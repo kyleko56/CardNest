@@ -8,6 +8,7 @@
 Cross‑platform Flutter app for managing trading card collections with batch OCR, secure offline storage, and a Fastify/Node backend. The system emphasizes privacy and security (SQLCipher at rest, App Check + JWT in transit, SPKI/TLS pinning), with pricing aggregation, quota/rate controls, and encrypted backups.
 
 ## Visual Proof of Concept
+> 🎥 [Watch Full Workflow (90s)](https://youtube.com/shorts/UxAPkvixCL0) Uncut User Journey Walkthrough.
 
 <table>
   <tr>
