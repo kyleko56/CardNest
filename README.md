@@ -146,7 +146,7 @@ flowchart TD
 
 - Recognition accuracy and duplicate prevention (separate from throughput)
   - Solution: Structured extraction (JSON mode) feeding candidate retrieval with lightweight heuristic scoring; optional vision re‑ranking among top‑K image candidates with confidence gating; exact‑match DB lookup by `langId`; and “withhold on ambiguity” to avoid incorrect saves. Local DB dedupe prevents duplicates; user‑facing messages localize OCR errors.
-  - Impact: Precision ≈ 99%, Recall ≈ 97% on internal test set; reduced dupes and clearer UX on ambiguous results.
+  - Impact: Precision ≈ 99%, Recall ≈ 97%; evaluated on 300 manually-labeled queries (top-1; 100 each in EN/JA/ZH).
 
 - Multilingual data normalization and search quality
   - Solution: Offline ingestion and normalization of card data across languages with deterministic canonical IDs, conflict detection/resolution rules, and idempotent, repeatable scripts/tests to keep the dataset consistent.
