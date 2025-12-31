@@ -2,7 +2,7 @@
 
 - Role: Sole developer (with AI coding agent)
 - Timeline: 2025-07 → 2025-10
-- Status: Private repo, unpublished app (internal TestFlight used)
+- Status: Unpublished app, product code is private; this public repository contains an architecture write-up + demo. (internal TestFlight used)
 > Note: This repository is an architecture-focused case study.
 > Application source code is kept private; this repo documents system design, trade-offs, and results.
 
